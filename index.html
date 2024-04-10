@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE110 Meeting</title>
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png">
+  </head>
+  <body>
+    <header>
+        <div>CSE110 Meeting</div>
+        <nav>
+            <ol>
+                <li><a href="#meeting_1">Meeting 1</a></li>
+                <li><a href="#tbd">More meetings</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <h1 id="meeting_1">Meeting 1</h1>
+        <section>
+            <h3>04/10 check-ins</h3>
+            <nav>
+                <ul>
+                    <li><a href="#attendance_list">Attendance List</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#unfinished_business">Unfinished Business</a></li>
+                    <li><a href="#new_business">New Business</a></li>
+                    <li><a href="#cqc">Comments/Questions/Concerns</a></li>
+                    <li><a href="#media">Media Recording</a></li>
+                </ul>
+            </nav>
+            
+            <h2 id="attendance_list">Attendance List</h2>
+            <ul>
+                <li><input type="checkbox" checked/>Andrew</li>
+                <li><input type="checkbox" checked/>Brendon</li>
+                <li><input type="checkbox" checked/>Charlie</li>
+                <li><input type="checkbox" checked/>Drew</li>
+                <li><input type="checkbox" checked/>Girma</li>
+                <li><input type="checkbox"/>Henry</li>
+                <li><input type="checkbox" checked/>Jason</li>
+                <li><input type="checkbox"/>Jesus</li>
+                <li><input type="checkbox" checked/>Kris</li>
+                <li><input type="checkbox" checked/>Lance</li>
+                <li><input type="checkbox" checked/>Paul</li>
+            </ul>
+            
+            <h2 id="agenda">Agenda</h2>
+            <ul>
+                <li>Ice-Breaker</li>
+                <li>Take a picture</li>
+                <li>Scheduling</li>
+                <li>Future planning</li>
+            </ul>
+            
+            <h2 id="unfinished_business">Unfinished Business</h2>
+            <p>None due to <b>first</b> time meeting</p>
+
+            <h2 id="new_business">New Business</h2>
+            <details>
+                <summary><i>Group Bonding Event</i></summary>
+                <p>We haven't decided yet what activity we will do, probably <strong>a zoom meeting</strong>.</p>
+            </details>
+            <details>
+                <summary><em>Group Kickoff, Repo and Meeting Prep</em></summary>
+                <p>We will decide in the next meeting, which is <strong>after next class on Thursday(04/11)</strong>, who is responsible for each part.</p>
+            </details>
+            <details>
+                <summary><em>Branding, Group Page and Video</em></summary>
+                <p>Same as above, we will decide in the next meeting.</p>
+            </details>
+
+            <h2 id="cqc"><span>Comments/Questions/Concerns</span></h2>
+            <p>None currently.</p>
+
+            <h2 id="media">Media Recording</h2>
+            <details>
+                <summary>Image</summary>
+                <img
+                    src="assets/proof_of_meeting.png"
+                    alt="Proof of Meeting"
+                    width="350"/>
+            </details>
+            <details>
+                <summary>Audio</summary>
+                <audio controls src="assets/what_audio.m4a"></audio>
+            </details>
+            <details>
+                <summary>Video</summary>
+                <video controls width="700">
+                    <source src="assets/what.mp4" type="video/mp4"/>
+                </video>
+            </details>
+            <br />
+            <br />
+        </section>
+    </main>
+    <hr />
+    <form onsubmit="alert('Thank You!')">
+        <fieldset>
+            <label>Is this webpage helpful?</label><br/>
+            <input type="radio" name="helpful"/>
+            <label>Yes</label><br/>
+            <input type="radio" name="helpful"/>
+            <label>No</label><br/>
+
+            <label>Where do you hear us?</label><br/>
+            <input list="platforms"/>
+            <datalist id="platforms">
+                <option value="Ins"></option>
+                <option value="Flyer"></option>
+                <option value="Friends"></option>
+                <option value="Club Fair"></option>
+            </datalist><br/>
+
+            <label>Which part do you think needs improvement the most?</label><br/>
+            <select>
+                <option value="">--Please choose an option--</option>
+                <option value="Attendance List">Attendance List</option>
+                <option value="Agenda">Agenda</option>
+                <option value="Unfinished Business">Unfinished Business</option>
+                <option value="New Business">New Business</option>
+                <option value="Comments/Questions/Concerns">Comments/Questions/Concerns</option>
+                <option value="Media Recording">Media Recording</option>
+            </select><br/>
+
+            <label>Leave your comments below</label><br/>
+            <textarea rows="5" cols="33"></textarea><br/>
+            <button>Submit</button>
+        </fieldset>
+      </form>
+
+    <footer>
+        <div>&copy; Charlie Shang</div>
+    </footer>
+  </body>
+</html>
