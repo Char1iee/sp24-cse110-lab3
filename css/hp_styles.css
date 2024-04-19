@@ -4,12 +4,12 @@
     --mid-grey: #555;
     --light-grey: #777;
     --background-color: #ccc;
-    ----white: #fff;
+    --white: #fff;
 }
 
 body {
     background-color: var(--background-color);
-    color: var(----white);
+    color: var(--white);
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@ nav ol li {
 }
 
 nav a {
-    color: var(----white);
+    color: var(--white);
     text-decoration: none;
     display: block;
 }
@@ -57,7 +57,7 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: var(--dark);
-    color: var(----white);
+    color: var(--white);
     border-radius: 8px;
     position: fixed;
     bottom: 0;
