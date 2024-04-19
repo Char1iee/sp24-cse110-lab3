@@ -1,0 +1,168 @@
+:root {
+    --dark: #333;
+    --mid-grey: #555;
+    --light-grey: #777;
+    --background-color: #ccc;
+    --white: #fff;
+}
+
+* {
+    color: var(--white);
+}
+
+a[href="index.html"] {
+    font-weight: bold;
+}
+
+details > summary {
+    font-size: large;
+}
+
+h2 + p {
+    font-weight: bold;
+    color: rgba(255, 72, 0, 0.834);
+}
+
+h2 ~ details {
+    font-size: 120%;
+}
+
+h2.attendance_list{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2:has(+ p) {
+    font-size: 200%;
+}
+
+#agenda {
+    color: var(--dark);
+    &:hover {
+        color: ivory;
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-self: center;
+    justify-items: stretch;
+    row-gap: 1px;
+}
+
+.title {
+    font-size: 30px;
+    height: 50%;
+    width: 50%;
+    max-width: none;
+    max-height: none;
+    position: static;
+}
+
+#upper_index {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: hsla(0, 0%, 50%, 0.9);
+    border-radius: 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 0;
+    margin-right: 2px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: auto;
+    background-color: rgb(51, 51, 51);
+    padding: 1rem;
+    position: relative;
+}
+
+#meeting_index {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--mid-grey);
+    border-radius: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1em 20px;
+    display: block;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--light-grey);
+    border: 1px solid var(--mid-grey);
+    border-radius: 8px;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 0.2pc;
+}
+
+form {
+    background-color: var(--mid-grey);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 8px;
+    border-style: dotted;
+    border-color: #333;
+    border-width: 3px;
+    margin: 0 15px 15px 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 0.10416in;
+    background-color: var(--dark);
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: color(from hsl(0 0 50%) srgb r g b);
+}
+
+nav a:active, button:active {
+    background-color: color(from hsl(0 0 0%) srgb r g b);
+}
+
+button:hover {
+    background-color: color-mix(in srgb, black 50%, white 70%);
+}
+
+button {
+    background-color: var(--light-grey);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    nav ul, nav ol {
+        flex-direction: column;
+    }
+}
+
+input[type="checkbox"], input[type="radio"] {
+    accent-color: var(--dark);
+}

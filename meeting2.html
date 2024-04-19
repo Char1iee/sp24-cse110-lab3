@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/sub_styles.css">
     <title>ShellDivers Meetings</title>
     <link rel="icon" type="image/png" href="assets/favicon-16x16.png">
 </head>
   <body>
     <header>
-        <div>ShellDivers Meetings</div>
+        <div class="title">ShellDivers Meetings</div>
         <nav>
-            <ol>
+            <ol id="upper_index">
                 <li><a href="index.html">Homepage</a></li>
                 <li><a href="meeting1.html">Meeting 1</a></li>
-                <li><a href="#meeting_2">Meeting 2</a></li>
+                <li><a href="meeting2.html">Meeting 2</a></li>
             </ol>
         </nav>
     </header>
     <main>
-        <h1 id="meeting_2">Meeting 2</h1>
+        <h1>Meeting 2: 04/12 Group Kickoff</h1>
         <section>
-            <h3>04/12 Group Kickoff</h3>
             <nav>
-                <ul>
+                <ul id="meeting_index">
                     <li><a href="#attendance_list">Attendance List</a></li>
                     <li><a href="#agenda">Agenda</a></li>
                     <li><a href="#unfinished_business">Unfinished Business</a></li>
@@ -32,7 +32,7 @@
                 </ul>
             </nav>
             
-            <h2 id="attendance_list">Attendance List</h2>
+            <h2 class="attendance_list">Attendance List</h2>
             <ul>
                 <li><input type="checkbox" checked/>Andrew</li>
                 <li><input type="checkbox" checked/>Brendon</li>
