@@ -159,8 +159,8 @@ button {
 }
 
 @media (max-width: 600px) {
-    nav ul, nav ol {
-        flex-direction: column;
+    * {
+        transform: scale(0.8);
     }
 }
 
