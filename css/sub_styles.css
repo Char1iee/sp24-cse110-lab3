@@ -158,12 +158,6 @@ button {
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
-    * {
-        transform: scale(0.8);
-    }
-}
-
 input[type="checkbox"], input[type="radio"] {
     accent-color: var(--dark);
 }
